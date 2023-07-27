@@ -1,0 +1,83 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "checkJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "noUncheckedIndexedAccess": true,
+    // "noImplicitAny": false,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+      "@/app/*": [
+        "./src/app/*"
+      ],
+      "@/ui/*": [
+        "./src/components/ui/*"
+      ],
+      "@/components/*": [
+        "./src/components/*"
+      ],
+      "@/hooks/*": [
+        "./src/hooks/*"
+      ],
+      "@/lib/*": [
+        "./src/lib/*"
+      ],
+      "@/provider/*": [
+        "./src/provider/*"
+      ],
+      "@/schemas/*": [
+        "./src/schemas/*"
+      ],
+      "@/server/*": [
+        "./src/server/*"
+      ],
+      "@/styles/*": [
+        "./src/styles/*"
+      ],
+      "@/types/*": [
+        "./src/types/*"
+      ],
+      "@/utils/*": [
+        "./src/utils/*"
+      ]
+    },
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": [
+    ".eslintrc.cjs",
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.cjs",
+    "**/*.mjs",
+    "src/app/*",
+    "tailwind.config.js",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
